@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.Double?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sio.tpbidonb.TpBidonAController">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: purple;" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="103.0" prefWidth="603.0" text="C'est beau !!" textFill="WHITE">
+               <font>
+                  <Font name="Georgia Bold" size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="300.0" prefWidth="198.0" style="-fx-background-color: purple;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnPSG" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onMouseClicked="#btnPSGClicked" prefHeight="63.0" prefWidth="200.0" style="-fx-background-color: purple;" text="Paris Saint Germain" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/psg.jpeg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Georgia" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDortmund" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onMouseClicked="#btnDortmundClicked" prefHeight="63.0" prefWidth="200.0" style="-fx-background-color: purple;" text="Dortmund" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="46.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/dortmund.jpeg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Georgia" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane fx:id="apPSG" prefHeight="300.0" prefWidth="404.0" style="-fx-background-color: white;">
+               <children>
+                  <Circle layoutX="194.0" layoutY="150.0" radius="100.0" stroke="BLACK" strokeType="INSIDE">
+                     <fill>
+                        <RadialGradient centerX="0.5055401662049861" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.7182220816612244" green="0.23038499057292938" blue="0.8157894611358643" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </fill>
+                  </Circle>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="apDortmund" prefHeight="300.0" prefWidth="402.0" style="-fx-background-color: white;">
+               <children>
+                  <Polygon layoutX="201.0" layoutY="160.0" stroke="BLACK" strokeType="INSIDE">
+                    <points>
+                      <Double fx:value="-50.0" />
+                      <Double fx:value="40.0" />
+                      <Double fx:value="50.0" />
+                      <Double fx:value="40.0" />
+                      <Double fx:value="0.0" />
+                      <Double fx:value="-60.0" />
+                    </points>
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.7415894865989685" green="0.08796296268701553" blue="1.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Polygon>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

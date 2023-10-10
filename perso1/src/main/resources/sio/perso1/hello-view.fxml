@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sio.perso1.Tp1DevoirController">
+    <left>
+        <VBox prefHeight="300.0" prefWidth="137.0" style="-fx-background-color: pink;" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="btnExempleN1" mnemonicParsing="false" prefHeight="61.0" prefWidth="142.0" style="-fx-background-color: pink;" text="Exemple N°1">
+                    <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../Image/Coeur.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="btnExempleN2" mnemonicParsing="false" prefHeight="61.0" prefWidth="142.0" style="-fx-background-color: pink;" text="Exemple N°2">
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Image/Coeur.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+                </Button>
+            <Button fx:id="btnExempleN21" mnemonicParsing="false" prefHeight="61.0" prefWidth="142.0" style="-fx-background-color: pink;" text="Exemple N°2">
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Image/Coeur.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            </children>
+        </VBox>
+    </left>
+    <top>
+        <HBox prefHeight="78.0" prefWidth="600.0" style="-fx-background-color: pink;" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="lblTP1" prefHeight="117.0" prefWidth="600.0" text="TP 1 : Les bases">
+                    <font>
+                        <Font name="Courgette Regular" size="36.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+    </top>
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane prefHeight="323.0" prefWidth="463.0">
+                    <children>
+                        <Label fx:id="lblContacts" layoutX="36.0" layoutY="22.0" prefHeight="26.0" prefWidth="78.0" text="Contacts" />
+                        <Button fx:id="btnAjouter" layoutX="139.0" layoutY="22.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="82.0" styleClass="cmdContacts" stylesheets="@../../CSS/color.css" text="Ajouter" />
+                        <Button fx:id="btnModifier" layoutX="244.0" layoutY="22.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="82.0" styleClass="cmdContacts" stylesheets="@../../CSS/color.css" text="Modifier" />
+                        <Button fx:id="btnSupprimer" layoutX="347.0" layoutY="22.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="82.0" styleClass="cmdContacts" stylesheets="@../../CSS/color.css" text="Supprimer" />
+                        <TableView fx:id="tvContacts" layoutX="63.0" layoutY="79.0" prefHeight="200.0" prefWidth="327.0">
+                            <columns>
+                                <TableColumn fx:id="tcNom" prefWidth="112.0" text="Nom" />
+                                <TableColumn fx:id="tcPrenom" prefWidth="112.0" text="Prénom" />
+                                <TableColumn fx:id="tcAge" prefWidth="112.0" text="Age" />
+                            </columns>
+                        </TableView>
+                    </children></AnchorPane>
+                <AnchorPane prefHeight="323.0" prefWidth="463.0" visible="false" />
+                <AnchorPane prefHeight="324.0" prefWidth="464.0" visible="false" />
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

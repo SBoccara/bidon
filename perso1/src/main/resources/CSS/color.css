@@ -1,0 +1,6 @@
+.cmdContacts{
+    -fx-background-color:#ffc0cb;
+}
+.cmdContacts:focused{
+    -fx-background-color: #a4a5d4;
+}
